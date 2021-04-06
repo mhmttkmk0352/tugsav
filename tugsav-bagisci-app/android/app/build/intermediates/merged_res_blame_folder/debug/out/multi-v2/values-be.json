@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mehmettokmak/Desktop/tusav3/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
+            "outputFile": "/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml",
             "map": [
                 {
                     "source": "/Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/dcffa74d8d015470a7eae32b9eb648c7/jetified-play-services-basement-17.0.0/res/values-be/values.xml",

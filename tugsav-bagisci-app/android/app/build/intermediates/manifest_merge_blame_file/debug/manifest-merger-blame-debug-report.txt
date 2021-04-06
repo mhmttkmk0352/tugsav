@@ -9,37 +9,37 @@
 9        android:targetSdkVersion="29" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:4:5-67
-12-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:4:22-64
+12-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:5:5-79
-13-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:5:22-76
+13-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:5:5-79
+13-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:5:22-76
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:6:5-65
-14-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:6:22-62
+14-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:6:5-65
+14-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:6:22-62
 15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 15-->[com.facebook.flipper:flipper:0.75.1] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
 15-->[com.facebook.flipper:flipper:0.75.1] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
 16
 17    <uses-feature
-17-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
+17-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:11:5-13:36
 18        android:name="android.hardware.camera"
-18-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
+18-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:12:9-47
 19        android:required="false" />
-19-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
+19-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:13:9-33
 20    <uses-feature
-20-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
+20-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:14:5-16:36
 21        android:name="android.hardware.camera.autofocus"
-21-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
+21-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:15:9-57
 22        android:required="false" />
-22-->[:react-native-camera] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
+22-->[:react-native-camera] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-camera/android/build/intermediates/library_manifest/generalDebug/AndroidManifest.xml:16:9-33
 23
 24    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
-24-->[:react-native-maps] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
-24-->[:react-native-maps] /Users/mehmettokmak/Desktop/tusav3/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
+24-->[:react-native-maps] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-81
+24-->[:react-native-maps] /Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/node_modules/react-native-maps/lib/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-78
 25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/faf3edd0a0a40b32e6c32885cc662e42/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 25-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/faf3edd0a0a40b32e6c32885cc662e42/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
@@ -52,64 +52,64 @@
 29-->[com.google.android.gms:play-services-maps:17.0.0] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/faf3edd0a0a40b32e6c32885cc662e42/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 30
 31    <application
-31-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:8:5-28:19
+31-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:8:5-28:19
 32        android:name="com.tusav.MainApplication"
-32-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:9:7-38
+32-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:9:7-38
 33        android:allowBackup="false"
-33-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:13:7-34
+33-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:13:7-34
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 34-->[androidx.core:core:1.1.0] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/d67cd79abd1ca209502f51c69d23182b/core-1.1.0/AndroidManifest.xml:24:18-86
 35        android:debuggable="true"
 36        android:icon="@mipmap/ic_launcher"
-36-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:11:7-41
+36-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:11:7-41
 37        android:label="@string/app_name"
-37-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:10:7-39
+37-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:10:7-39
 38        android:roundIcon="@mipmap/ic_launcher_round"
-38-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:12:7-52
+38-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:12:7-52
 39        android:theme="@style/AppTheme"
-39-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:14:7-38
+39-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:14:7-38
 40        android:usesCleartextTraffic="true" >
-40-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/debug/AndroidManifest.xml:8:9-44
+40-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/debug/AndroidManifest.xml:8:9-44
 41        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-41-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/debug/AndroidManifest.xml:11:9-86
-41-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/debug/AndroidManifest.xml:11:19-83
+41-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/debug/AndroidManifest.xml:11:9-86
+41-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/debug/AndroidManifest.xml:11:19-83
 42        <activity
-42-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:15:7-25:18
+42-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:15:7-25:18
 43            android:name="com.tusav.MainActivity"
-43-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:16:9-37
+43-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:16:9-37
 44            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-44-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:18:9-86
+44-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:18:9-86
 45            android:label="@string/app_name"
-45-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:17:9-41
+45-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:17:9-41
 46            android:launchMode="singleTask"
-46-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:19:9-40
+46-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:19:9-40
 47            android:windowSoftInputMode="adjustResize" >
-47-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:20:9-51
+47-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:20:9-51
 48            <intent-filter>
-48-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:21:9-24:25
+48-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:21:9-24:25
 49                <action android:name="android.intent.action.MAIN" />
-49-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:22:13-65
-49-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:22:21-62
+49-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:22:13-65
+49-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:22:21-62
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:23:13-73
-51-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:23:23-70
+51-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:23:13-73
+51-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:23:23-70
 52            </intent-filter>
 53        </activity>
 54
 55        <meta-data
-55-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:26:7-121
+55-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:26:7-121
 56            android:name="com.google.android.geo.API_KEY"
-56-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:26:18-63
+56-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:26:18-63
 57            android:value="AIzaSyAx8PsKvGf8qbqoizD1ULKjPP05F03MtIs" />
-57-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:26:64-119
+57-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:26:64-119
 58
 59        <uses-library
-59-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:27:7-85
+59-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:27:7-85
 60            android:name="org.apache.http.legacy"
-60-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:27:21-58
+60-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:27:21-58
 61            android:required="false" />
-61-->/Users/mehmettokmak/Desktop/tusav3/android/app/src/main/AndroidManifest.xml:27:59-83
+61-->/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/src/main/AndroidManifest.xml:27:59-83
 62
 63        <activity
 63-->[com.google.android.gms:play-services-base:17.0.0] /Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/2631375de80937c90cd3a1032ab35871/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
