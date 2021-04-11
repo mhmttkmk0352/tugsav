@@ -5,11 +5,10 @@ import { Container, Button, Content, Form, Item, Input, Text } from 'native-base
 class App extends React.Component{
     constructor(props){
         super( props );
-        this.state = {ad:"", il:"İstanbul", ilçe:"", adres:""}
-  
+        this.state = {ad:"", il:"İstanbul", ilçe:"", adres:"",  resimbase64:this.props.route.params.onizleme_params.data.base64}
     }
     kayit = () => {
-        console.log( this.props.route.params );
+        console.log( this.state );
     }
     render(){
         return(
