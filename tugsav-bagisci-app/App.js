@@ -8,19 +8,22 @@ const Stack = createStackNavigator();
 import Giris from './pages/giris';
 import Anasayfa from './pages/anasayfa';
 import Barcode from './pages/barcode';
-import Froum from './pages/forum';
+import Forum from './pages/forum';
+import Kamera from './pages/kamera';
+import Onizleme from './pages/onizleme';
 //Page End
 
 class App extends React.Component{
   render(){
     return(
       <NavigationContainer>
-        <Stack.Navigator initialRouteName={"Giris"}>
+        <Stack.Navigator initialRouteName={"Kamera"}>
           <Stack.Screen name="Giris" component={Giris} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Anasayfa" component={Anasayfa} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Barcode" component={Barcode} options={{headerShown:true}}></Stack.Screen>
-          <Stack.Screen name="Forum" component={Froum} options={{headerShown:false}}></Stack.Screen>
-          
+          <Stack.Screen name="Forum" component={Forum} options={{headerShown:false}}></Stack.Screen>
+          <Stack.Screen name="Kamera" component={Kamera} options={{headerShown:false}}></Stack.Screen>
+          <Stack.Screen name="Onizleme" component={Onizleme} options={{headershown:false}}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     );
