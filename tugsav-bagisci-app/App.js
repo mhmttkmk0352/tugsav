@@ -11,6 +11,7 @@ import Barcode from './pages/barcode';
 import Forum from './pages/forum';
 import Kamera from './pages/kamera';
 import Onizleme from './pages/onizleme';
+import Kayit from './pages/kayit';
 //Page End
 
 class App extends React.Component{
@@ -23,7 +24,8 @@ class App extends React.Component{
           <Stack.Screen name="Barcode" component={Barcode} options={{headerShown:true}}></Stack.Screen>
           <Stack.Screen name="Forum" component={Forum} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Kamera" component={Kamera} options={{headerShown:false}}></Stack.Screen>
-          <Stack.Screen name="Onizleme" component={Onizleme} options={{headershown:false}}></Stack.Screen>
+          <Stack.Screen name="Onizleme" component={Onizleme} options={{headerShown:true}}></Stack.Screen>
+          <Stack.Screen name="Kayit" component={Kayit} options={{headerShown:true}}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     );
