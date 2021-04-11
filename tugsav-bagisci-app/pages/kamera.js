@@ -13,7 +13,7 @@ class App extends React.Component {
 
     takePicture = async() => {
         if ( this.camera ){
-            const data = await this.camera.takePictureAsync({quality:1, base64:false})
+            const data = await this.camera.takePictureAsync({quality:1, base64:true})
             this.goToPage( "Onizleme", {data:data} );
         }
     }

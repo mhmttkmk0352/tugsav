@@ -5,7 +5,11 @@ import { Container, Button, Content, Form, Item, Input, Text } from 'native-base
 class App extends React.Component{
     constructor(props){
         super( props );
-        this.state = {ad:"", il:"", ilçe:"", adres:""}
+        this.state = {ad:"", il:"İstanbul", ilçe:"", adres:""}
+  
+    }
+    kayit = () => {
+        console.log( this.props.route.params );
     }
     render(){
         return(
@@ -16,12 +20,19 @@ class App extends React.Component{
                 <View style={{flex:50}}>
                     <Form>
                         <Item>
-                        <Input style={styles.Input} value={this.state.ad} placeholder="Adınız Ve Soyadınız" onChangeText={ text => { this.setState({ad: text}) } } />
+                            <Input style={styles.Input} value={this.state.ad} placeholder="Adınız" onChangeText={ text => { this.setState({ad: text}) } } />
                         </Item>
                         <Item>
-                        <Input style={styles.Input} value={this.state.il} placeholder="Parola" onChangeText={text => { this.setState({il:text}) }}/>
+                            <Input style={styles.Input} value={this.state.il} placeholder="İliniz" onChangeText={text => { this.setState({il:text}) }}/>
                         </Item>
-                        <Button primary onPress={ ()=>{this.kayd()} } style={styles.Button}>
+                        <Item>
+                            <Input style={styles.Input} value={this.state.ilce} placeholder="İlçeniz" onChangeText={text => { this.setState({ilce:text}) }}/>
+                        </Item>
+                        <Item>
+                            <Input style={styles.Input} value={this.state.adres} placeholder="Adresiniz" onChangeText={text => { this.setState({adres:text}) }}/>
+                        </Item>
+                        
+                        <Button primary onPress={ ()=>{this.kayit()} } style={styles.Button}>
                         <Text>Gönder</Text>
                         </Button>
                     </Form>

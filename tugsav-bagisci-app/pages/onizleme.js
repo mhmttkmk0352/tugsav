@@ -4,7 +4,7 @@ import {StackActions} from '@react-navigation/native';
 class App extends React.Component{
     constructor(props){
         super( props );
-        this.state={resim_uri:this.props.route.params.data.uri}
+        this.state={params:this.props.route.params}
     }
     goToPage = (pageName, data) => {
         const stackAction = StackActions.push( pageName, data );
@@ -18,7 +18,7 @@ class App extends React.Component{
                 </View>
                 <View style={{flex:10}}>
                 <SafeAreaView style={{flex:10, marginBottom:5, backgroundColor:"#008CBA", justifyContent:"center", alignItems:"center"}}>
-                    <TouchableOpacity onPress={ () => {this.goToPage( "Kayit", {resim_uri:this.state.resim_uri} ) }}>
+                    <TouchableOpacity onPress={ () => {this.goToPage( "Kayit", {onizleme_params:this.state.params} ) }}>
                         <Text style={{color:"white", fontSize:20, fontWeight:"bold", borderRadius:30}}>
                             DEVAM
                         </Text>
