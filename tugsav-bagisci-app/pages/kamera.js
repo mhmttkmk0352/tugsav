@@ -1,10 +1,15 @@
 import React from 'react';
 import {View, SafeAreaView, Text, TouchableOpacity, Button} from 'react-native';
 import {RNCamera} from 'react-native-camera';
-import axios from 'axios';
 import { StackActions } from '@react-navigation/native';
+//import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
+//import Geolocation from 'react-native-geolocation-service';
 
 class App extends React.Component {
+    constructor( props ){
+        super( props );
+        this.state = {}
+    }
 
     goToPage = (pageName, data) => {
         const stackAction = StackActions.push( pageName, data );
@@ -13,9 +18,32 @@ class App extends React.Component {
 
     takePicture = async() => {
         if ( this.camera ){
-            const data = await this.camera.takePictureAsync({quality:0.5, base64:true})
-            this.goToPage( "Onizleme", {data:data} );
+            this.props.route.params["data"] = await this.camera.takePictureAsync({quality:0.5, base64:true})
+            this.goToPage( "Onizleme", this.props.route.params );
         }
+    }
+/*
+    openGps = () => {
+        RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
+          interval: 10000,
+          fastInterval: 5000,
+        }).then( data => {
+          if ( data  ){
+            Geolocation.getCurrentPosition(position => {
+                console.log( {pos:position, data:data} );
+            });
+          }
+          else{
+            this.openGps();
+          }
+        }).catch(err=>{
+          this.openGps();
+        });
+    }
+*/  
+    componentDidMount(){
+        //console.log( {kamera_props:this.props.route.params} );
+        //this.openGps();
     }
 
     render(){

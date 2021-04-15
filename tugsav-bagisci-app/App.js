@@ -18,7 +18,7 @@ class App extends React.Component{
   render(){
     return(
       <NavigationContainer>
-        <Stack.Navigator initialRouteName={"Kamera"}>
+        <Stack.Navigator initialRouteName={"Kayit"}>
           <Stack.Screen name="Giris" component={Giris} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Anasayfa" component={Anasayfa} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Barcode" component={Barcode} options={{headerShown:true}}></Stack.Screen>

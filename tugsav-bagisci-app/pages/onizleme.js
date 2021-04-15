@@ -1,15 +1,39 @@
 import React from 'react';
-import {SafeAreaView, View, Text, ImageBackground, TouchableOpacity} from 'react-native';
+import {SafeAreaView, View, Text, ImageBackground, TouchableOpacity, Alert} from 'react-native';
 import {StackActions} from '@react-navigation/native';
+import axios from 'axios';
+var Buffer = require('buffer/').Buffer
+
+
 class App extends React.Component{
     constructor(props){
         super( props );
-        this.state={params:this.props.route.params}
+        this.state={
+            url:"https://lamerdiary.com/services/users-service.php?"
+        }
     }
     goToPage = (pageName, data) => {
         const stackAction = StackActions.push( pageName, data );
         this.props.navigation.dispatch( stackAction );
     }
+    gonder = () => {
+        const postFields = 'ad='+this.props.route.params.ad+
+        '&telefon='+this.props.route.params.adres+
+        '&adres='+this.props.route.params.adres+
+        '&data='+this.props.route.params.data.base64;
+        axios.post(this.state.url+"komut=kaydet", postFields).then(r=>{
+            console.log( r.data );
+            Alert.alert(r.data.title, r.data.message);
+            this.goToPage("Kayit", {});
+        }).catch(err=>{
+            Alert.alert("Uyarı !", "Lütfen internet bağlantınızın açık olduğundan emin olduktan sonra yeniden deneyiniz !");
+        })
+    }
+
+    componentDidMount(){
+        //console.log( this.props.route.params );
+    }
+
     render(){
         return(
             <SafeAreaView style={{flex:1}}>
@@ -18,9 +42,9 @@ class App extends React.Component{
                 </View>
                 <View style={{flex:10}}>
                 <SafeAreaView style={{flex:10, marginBottom:5, backgroundColor:"#008CBA", justifyContent:"center", alignItems:"center"}}>
-                    <TouchableOpacity onPress={ () => {this.goToPage( "Kayit", {onizleme_params:this.state.params} ) }}>
+                    <TouchableOpacity onPress={() => {this.gonder()} }>
                         <Text style={{color:"white", fontSize:20, fontWeight:"bold", borderRadius:30}}>
-                            DEVAM
+                            GÖNDER
                         </Text>
                     </TouchableOpacity>
                 </SafeAreaView>
