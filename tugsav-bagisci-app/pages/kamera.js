@@ -18,7 +18,7 @@ class App extends React.Component {
 
     takePicture = async() => {
         if ( this.camera ){
-            this.props.route.params["data"] = await this.camera.takePictureAsync({quality:0.5, base64:true})
+            this.props.route.params["data"] = await this.camera.takePictureAsync({quality:1, base64:true})
             this.goToPage( "Onizleme", this.props.route.params );
         }
     }
