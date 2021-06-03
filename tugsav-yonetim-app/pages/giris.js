@@ -10,7 +10,7 @@ class App extends Component {
   constructor( props ){
     super( props );
     this.state = {
-      url:"https://lamerdiary.com/services/service.php?",
+      url:"https://ozveriimalat.com/services/service.php?",
       kullanici_adi:"",
       parola:"",
       hash:""

@@ -12,7 +12,7 @@ class App extends React.Component{
   constructor( props ){
     super( props );
     this.state = {
-      url:"https://lamerdiary.com/services/service.php?",
+      url:"https://ozveriimalat.com/services/service.php?",
       latitude: 41.0391683,
       longitude: 28.9982707,
       latitudeDelta: 1.2,

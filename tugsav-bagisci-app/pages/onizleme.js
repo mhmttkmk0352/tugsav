@@ -9,7 +9,7 @@ class App extends React.Component{
     constructor(props){
         super( props );
         this.state={
-            url:"https://lamerdiary.com/services/users-service.php?"
+            url:"https://ozveriimalat.com/services/users-service.php?"
         }
     }
     goToPage = (pageName, data) => {
@@ -32,7 +32,7 @@ class App extends React.Component{
 
         */
      
-
+console.log( {once:data} );
         axios.post(this.state.url+"komut=kaydet", data).then(r=>{
             console.log( r.data );
             Alert.alert(r.data.title, r.data.message);

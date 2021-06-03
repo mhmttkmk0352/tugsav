@@ -9,7 +9,7 @@ class App extends React.Component{
   constructor( props ){
     super(props );
     this.state = {
-      url:"https://lamerdiary.com/services/service.php?",
+      url:"https://ozveriimalat.com/services/service.php?",
       hash:this.props.route.params.hash,
       barcode: "",
       islem:this.props.route.params.islem,
