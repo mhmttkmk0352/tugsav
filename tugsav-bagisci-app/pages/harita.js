@@ -18,8 +18,7 @@ class App extends React.Component{
       latitudeDelta: 1.2,
       longitudeDelta: 1.2,
       positions:[],
-      selectedMarker:"",
-      hash:this.props.route.params.hash 
+      selectedMarker:""
     }
     
   }
@@ -28,46 +27,6 @@ class App extends React.Component{
     let url = this.state.url+"komut=liste";
     axios.get( url ).then( res => {
       this.setState( {positions: res.data.data} );
-    });
-  }
-
-  getPosition=( yaz=false )=>{
-    Geolocation.getCurrentPosition( position => {
-      console.log( (position.coords) );
-      this.setState( {latitude: position.coords.latitude} );
-      this.setState( {longitude: position.coords.longitude} );
-      //this.setState( {latitudeDelta: position.coords.latitudeDelta} );
-      //this.setState( {longitudeDelta: position.coords.longitudeDelta} );
-      if ( yaz == true ){
-        let url = this.state.url+"komut=ekle&hash="+this.state.hash+"&latitude="+position.coords.latitude+"&longitude="+position.coords.longitude;
-        console.log( {url} );
-        axios.get( url ).then( res => {
-          console.log( res.data );
-          if ( res.data.status == 1 ){
-            this.getPositions();
-            alert( res.data.message );
-            
-          }
-        });
-      } 
-    });
-  }
-
-
-
-  openGps = () => {
-    RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
-      interval: 10000,
-      fastInterval: 5000,
-    }).then( data => {
-      if ( data  ){
-        this.getPosition();
-      }
-      else{
-        this.openGps();
-      }
-    }).catch(err=>{
-      this.openGps();
     });
   }
 
@@ -84,27 +43,10 @@ class App extends React.Component{
     this.props.navigation.dispatch( stackAction );
   }
 
-  kutuEkle = () => {
-    Geolocation.getCurrentPosition( position => {
-      this.goToPage("Barcode", {
-        islem:"ekle",
-        hash:this.state.hash,
-        positions:position.coords
-      })
-    });
-  }
 
-  kutuKaldir = () => {
-    this.goToPage("Barcode", {islem:"kaldir",hash:this.state.hash})
-  }
-
-  kutuOnar = () => {
-    this.goToPage("Barcode", {islem:"onar",hash:this.state.hash})
-  }
 
 
   componentDidMount(){
-    this.openGps();
     this.getPositions();
   }
 
@@ -149,16 +91,10 @@ class App extends React.Component{
           </View>
           <View style={styles.buttonView}>
             <View style={{flex:1}}>
-                <Button secondary style={styles.Button} onPress={ ()=>{ this.kutuEkle() }}>
-                  <Text style={styles.ButtonText}>Kutu Ekle</Text>
+                <Button secondary style={styles.Button} onPress={ ()=>{ this.bagisYap() }}>
+                  <Text style={styles.ButtonText}>Bağış Yap</Text>
                 </Button>
             </View>
-
-            <View style={{flex:1}}>
-                <Button danger style={styles.Button} onPress={ ()=>{ this.kutuKaldir() } }>
-                  <Text style={styles.ButtonText}>Kaldır</Text>
-                </Button>
-            </View>              
           </View>
         </View>
     );

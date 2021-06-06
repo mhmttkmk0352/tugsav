@@ -40,13 +40,13 @@ class App extends React.Component{
                 <View style={{flex:50}}>
                     <Form>
                         <Item>
-                            <Input style={styles.Input} value={this.state.ad} placeholder="Ad ve soyad:" onChangeText={ text => { this.setState({ad: text}) } } />
+                            <Input style={styles.Input} value={this.state.ad} placeholder="Ad ve soyad" onChangeText={ text => { this.setState({ad: text}) } } />
                         </Item>
                         <Item>
-                            <Input style={styles.Input} value={this.state.telefon} placeholder="Telefon:" onChangeText={text => { this.setState({telefon:text}) }}/>
+                            <Input style={styles.Input} value={this.state.telefon} placeholder="Telefon" onChangeText={text => { this.setState({telefon:text}) }}/>
                         </Item>
                         <Item>
-                            <Input style={styles.Input} value={this.state.adres} placeholder="Adres:" onChangeText={text => { this.setState({adres:text}) }}/>
+                            <Input style={styles.Input} value={this.state.adres} placeholder="Adres" onChangeText={text => { this.setState({adres:text}) }}/>
                         </Item> 
                         <Button primary onPress={ ()=>{this.kaydet()} } style={styles.Button}>
                         <Text>Gönder</Text>

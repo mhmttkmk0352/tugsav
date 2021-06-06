@@ -1,6 +1,8 @@
 import React from 'react';
 import {SafeAreaView, View, Text, ImageBackground, TouchableOpacity, Alert} from 'react-native';
 import {StackActions} from '@react-navigation/native';
+import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
+import Geolocation from 'react-native-geolocation-service';
 import axios from 'axios';
 var Buffer = require('buffer/').Buffer
 
@@ -9,7 +11,9 @@ class App extends React.Component{
     constructor(props){
         super( props );
         this.state={
-            url:"https://ozveriimalat.com/services/users-service.php?"
+            url:"https://ozveriimalat.com/services/users-service.php?",
+            latitude: "",
+            longitude: ""
         }
     }
     goToPage = (pageName, data) => {
@@ -22,7 +26,9 @@ class App extends React.Component{
         data.append("ad", this.props.route.params.ad);
         data.append("telefon", this.props.route.params.telefon);
         data.append("adres", this.props.route.params.adres);
-
+        data.append("latitude", this.state.latitude);
+        data.append("longitude", this.state.longitude);
+        
 
         /*
         const postFields = 'ad='+this.props.route.params.ad+
@@ -43,8 +49,30 @@ console.log( {once:data} );
         })
     }
 
+    getPosXY = () => {
+        RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
+            interval: 10000,
+            fastInterval: 5000,
+          }).then( data => {
+            if ( data  ){
+                Geolocation.getCurrentPosition( position => {
+                   console.log( {coords:position.coords} );
+                   this.setState( {latitude:position.coords.latitude} );
+                   this.setState( {longitude:position.coords.longitude} );
+                   
+                  });
+            }
+            else{
+              this.getPosXY();
+            }
+          }).catch(err=>{
+            this.getPosXY();
+          });
+    }
+
     componentDidMount(){
         //console.log( this.props.route.params );
+        this.getPosXY();
     }
 
     render(){
