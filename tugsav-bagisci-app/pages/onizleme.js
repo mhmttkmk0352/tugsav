@@ -42,7 +42,7 @@ console.log( {once:data} );
         axios.post(this.state.url+"komut=kaydet", data).then(r=>{
             console.log( r.data );
             Alert.alert(r.data.title, r.data.message);
-            this.goToPage("Kayit", {});
+            this.goToPage("Harita", {});
         }).catch(err=>{
             console.log( err );
             Alert.alert("Uyarı !", "Lütfen internet bağlantınızın açık olduğundan emin olduktan sonra yeniden deneyiniz !");
@@ -59,7 +59,6 @@ console.log( {once:data} );
                    console.log( {coords:position.coords} );
                    this.setState( {latitude:position.coords.latitude} );
                    this.setState( {longitude:position.coords.longitude} );
-                   
                   });
             }
             else{

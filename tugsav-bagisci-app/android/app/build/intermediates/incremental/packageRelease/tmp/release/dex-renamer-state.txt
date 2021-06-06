@@ -1,0 +1,7 @@
+#Sun Jun 06 21:44:28 EET 2021
+base.0=/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/mehmettokmak/Desktop/react-native/tugsav/tugsav/tugsav-bagisci-app/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex

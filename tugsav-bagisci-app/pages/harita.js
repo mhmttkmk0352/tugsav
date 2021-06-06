@@ -22,6 +22,9 @@ class App extends React.Component{
     }
     
   }
+  bagisYap = () => {
+    this.goToPage("Kayit", {})
+  }
 
   getPositions=async()=>{
     let url = this.state.url+"komut=liste";
@@ -42,11 +45,28 @@ class App extends React.Component{
     const stackAction = StackActions.push( pageName, data );
     this.props.navigation.dispatch( stackAction );
   }
-
-
-
-
+  getPosXY = () => {
+      RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
+          interval: 10000,
+          fastInterval: 5000,
+        }).then( data => {
+          if ( data  ){
+              Geolocation.getCurrentPosition( position => {
+                console.log( {coords:position.coords} );
+                this.setState( {latitude:position.coords.latitude} );
+                this.setState( {longitude:position.coords.longitude} );
+                
+                });
+          }
+          else{
+            this.getPosXY();
+          }
+        }).catch(err=>{
+          this.getPosXY();
+        });
+  }
   componentDidMount(){
+    this.getPosXY();
     this.getPositions();
   }
 
