@@ -68,9 +68,7 @@ class App extends React.Component{
   componentDidMount(){
     this.getPosXY();
     this.getPositions();
-    setTimeout(() => {
-      Linking.openURL("https://facebook.com");
-    }, 15000);
+
   }
 
   render(){
