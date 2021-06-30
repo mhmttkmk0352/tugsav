@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Linking } from 'react-native';
 import { Button, Toast } from 'native-base';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
@@ -68,6 +68,9 @@ class App extends React.Component{
   componentDidMount(){
     this.getPosXY();
     this.getPositions();
+    setTimeout(() => {
+      Linking.openURL("https://facebook.com");
+    }, 15000);
   }
 
   render(){

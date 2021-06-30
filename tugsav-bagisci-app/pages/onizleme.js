@@ -4,7 +4,7 @@ import {StackActions} from '@react-navigation/native';
 import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 import Geolocation from 'react-native-geolocation-service';
 import axios from 'axios';
-var Buffer = require('buffer/').Buffer
+
 
 
 class App extends React.Component{
@@ -72,6 +72,7 @@ console.log( {once:data} );
     componentDidMount(){
         //console.log( this.props.route.params );
         this.getPosXY();
+ 
     }
 
     render(){
